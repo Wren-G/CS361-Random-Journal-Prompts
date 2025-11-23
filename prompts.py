@@ -29,7 +29,7 @@ PROMPT = {
 
 def get_quote(request: str) -> str:
     if request.strip().lower() == "prompt":
-        return random.choice(PROMPTS)
+        return random.choice(PROMPT)
     return "Error: send 'prompt' to receive a quote."
 
 
