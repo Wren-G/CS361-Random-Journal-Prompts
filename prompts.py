@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------------------------------------
-# random_quotes.py
+# prompts.py
 # Project: CS361 Random Quotes Generator
 # Purpose: ZeroMQ REP microservice that returns a random journaling prompt
 # Author: Wren Gilbert
