@@ -13,24 +13,24 @@ import zmq
 import time
 
 PROMPT = {
-        "This too shall pass.",
-        "This moment is not something happening to you, it is something you are making every moment, with every thought.",
-        "You are growing, you are changing, but remember that one day you wished to be where you are right now.",
-        "You don't have to control your thoughts. You just have to stop letting them control you. — Dan Millman",
-        "The greatest weapon against stress is our ability to choose one thought over another. — William James",
-        "Between stimulus and response, there is a space. In that space is our power."
-        "to choose our response. In our response lies our growth and our freedom. — Viktor E. Frankl",
-        "Criticizing yourself all the time or being judgmental of yourself is like wearing sunglasses indoors — Matthew McKay",
-        "Tomorrow is a new day. You shall begin it serenely and with too high a spirit to be encumbered with your old nonsense. — Ralph Waldo Emerson",
-        "In three words, I can summarize everything I've learned about life. It goes on. — Robert Frost",
-        "Out of suffering have emerged the strongest souls; the most massive characters are seared with scars. — Khalil Gibran"
+        "Do you enjoy your current lifestyle? If not, why not?",
+        "What moment made you grateful this past week?",
+        "Write a letter to someone important to you, or your past or future self.",
+        "What is something you want to do on your bucket list, or want to add to it?",
+        "What helps you get through the day right now?",
+        "What is a good deed you would like to do?"
+        "Who is a really important person in your life right now?",
+        "When was the last time you took a trip?",
+        "What do you need to get off your chest?",
+        "What is a memory that never fails to make you smile?",
+        "What is something you are looking forward to?"
 }
 
 
 def get_quote(request: str) -> str:
     if request.strip().lower() == "prompt":
         return random.choice(PROMPT)
-    return "Error: send 'prompt' to receive a quote."
+    return "Error: send 'prompt' to receive a prompt."
 
 
 
